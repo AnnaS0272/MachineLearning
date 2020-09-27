@@ -1,5 +1,7 @@
 # MachineLearning
 
+## Main
+
 **Background:** Credit risk is an inherently unbalanced classification problem, as the number of good loans easily outnumber the number of risky loans. Therefore, we need to employ different techniques to train and evaluate models with unbalanced classes. In this analysis we evaluate the performance of multiple models and made a recommendation on whether they should be used to predict credit risk.
 
 **Oversampling**
@@ -63,3 +65,19 @@ avg / total       0.99      0.57      0.68      0.72      0.63      0.39     172
 ```
 
 **Final Recommendation: all methods of sampling revealed a heavy bias/high precision towards prediciting low_risk applications vs high_risk applications, which is highly problematic when trying to catch those high_risk loans. Therefore, none of these models are recommended for commercial application unless model sensativities can be tweaked further.**
+
+--
+## Extention
+
+We also trained and compared two different ensemble classifiers to predict loan risk and evaluate each model. We used the following modules: ```Balanced Random Forest Classifier``` and ```Easy Ensemble AdaBoost Classifier```, both from imblearn.ensemble. These modules combine resampling and model training into a single step. 
+
+```
+                  pre       rec       spe        f1       geo       iba       sup
+
+  high_risk       0.03      0.71      0.90      0.06      0.80      0.63        82
+   low_risk       1.00      0.90      0.71      0.95      0.80      0.65     17123
+
+avg / total       0.99      0.90      0.71      0.94      0.80      0.65     17205
+```
+
+
