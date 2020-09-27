@@ -38,7 +38,7 @@ Note: we observe the same pattern with low_risk predicted better than high_risk.
 
 We then tested an undersampling algorithms to determine which algorithm results in the best performance compared to the oversampling algorithms above. We undersampled the data using the Cluster Centroids algorithm.
 
-After printing the confusion matrix the F1 score is: **0.63**, **much lower model confidence compared to above.**
+After printing the confusion matrix the F1 score is: **0.63**, **much lower model confidence compared to the above.**
 ```
                    pre       rec       spe        f1       geo       iba       sup
 
