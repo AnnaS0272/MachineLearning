@@ -73,7 +73,7 @@ We also trained and compared two different ensemble classifiers to predict loan 
 
 **Balanced Random Forest Classifier**
 
-After printing the confusion matrix comparing for SMOTE the F1 score is: **0.94**
+After printing the confusion matrix the F1 score is: **0.94**
 ```
                   pre       rec       spe        f1       geo       iba       sup
 
@@ -85,7 +85,7 @@ avg / total       0.99      0.90      0.71      0.94      0.80      0.65     172
 
 **Easy Ensemble AdaBoost Classifier**
 
-After printing the confusion matrix comparing for SMOTE the F1 score is: **0.97**
+After printing the confusion matrix the F1 score is: **0.97**
 
 ```
                   pre       rec       spe        f1       geo       iba       sup
