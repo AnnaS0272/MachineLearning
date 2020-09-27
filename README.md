@@ -9,9 +9,7 @@
 First we compared two oversampling algorithms to determine which algorithm results in the best performance. 
 We oversampled the data using the naive random oversampling algorithm and the SMOTE algorithm. 
 
-The main paramenter of assessment will be using the F1 score. The F1 score, also called the harmonic mean, can be characterized as a single summary statistic of precision and sensitivity. The formula for the F1 score is the following:
-
-2(Precision * Sensitivity)/(Precision + Sensitivity)
+The main paramenter of assessment we will be using is the F1 score. The F1 score, also called the harmonic mean, can be characterized as a single summary statistic of precision and sensitivity. The formula for the F1 score is the following: ```2(Precision * Sensitivity)/(Precision + Sensitivity)```
 
 After printing the confusion matrix the F1 score is: **0.76.**  
 ```
